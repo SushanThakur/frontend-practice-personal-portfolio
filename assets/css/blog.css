@@ -1,11 +1,12 @@
 #blog{
     width: 80vw;
     margin: 0 auto;
-    margin-top: 10vh;
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     gap: 60px;
     max-width: 1000px;
+    min-width: 320px;
 }
 
 .blog-tile{
@@ -31,4 +32,25 @@
 .blog-type{
     font-size: 1.2em;
     color: #8695A4;
+}
+@media screen and (max-width: 922px) {
+
+    
+}
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-height: 667px) {
+    
+    
+}
+@media screen and (max-width: 400px) {
+    .blog-date{
+        font-size: 1em;
+        font-weight: 400;
+    }
+    .blog-type{
+        font-size: 1em;
+        color: #8695A4;
+    }
 }

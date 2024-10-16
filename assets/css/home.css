@@ -1,6 +1,5 @@
 /* Home Section */
 #home-container {
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,20 +192,7 @@
 
     .posts {
         flex-direction: column;
-    }
-
-    
-}
-@media screen and (max-width: 400px) {
-    #home{
-        flex-direction: column;
-        margin-top: 100px;
-        padding-bottom: 100px;
-    }
-    .post-n{
-        width: 350px;
-    }
-
+    }   
 }
 @media screen and (max-width: 768px) {
     .work-n {
@@ -226,4 +212,12 @@
         margin-top: 100px;
     }
     
+}
+@media screen and (max-width: 400px) {
+    #home{
+        flex-direction: column;
+    }
+    .post-n{
+        width: 350px;
+    }
 }
