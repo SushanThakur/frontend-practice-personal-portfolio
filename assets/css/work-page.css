@@ -1,0 +1,40 @@
+#detail-work-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 5vh;
+}
+
+.detail-work-wrapper{
+    width: 80vw;
+    max-width: 900px;
+    min-width: 450px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.detail-work-meta{
+    display: flex;
+    gap: 60px;
+}
+.detail-work-date{
+    font-weight: 900;
+    font-size: 1em;
+}
+.detail-work-heading{
+    font-size: 1.6em;
+}
+.detail-work-heading-2{
+    font-size: 1.2em;
+}
+.detail-work-date{
+    background-color: #FF7C7C;
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

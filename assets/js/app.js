@@ -16,3 +16,29 @@ closeIcon.addEventListener('click', () => {
     menuIcon.style.display = 'block';      // Show the menu icon
     closeIcon.style.display = 'none';      // Hide the close icon
 });
+
+
+function formEvent(){
+    event.preventDefault();
+    const userForm = document.getElementById("user-contact-form");
+    const formOutput = document.getElementById("form-output");
+    const userName = document.getElementById("user-name").value;
+    const userEmail = document.getElementById("user-email").value;
+    const userMessage = document.getElementById("user-message").value;
+    
+    
+
+    if(!userName || !userEmail || !userMessage){
+        formOutput.classList.add('error');
+        formOutput.innerHTML = "Please fill all the fields!! ";
+    }
+    else{
+        formOutput.classList.remove('error');
+        formOutput.innerHTML = "Submitted Sucessfully!! ";
+        console.log(userName);
+        console.log(userEmail);
+        console.log(userMessage);
+        userForm.reset();
+    }
+
+}

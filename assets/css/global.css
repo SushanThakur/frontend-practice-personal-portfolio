@@ -20,6 +20,8 @@ a{text-decoration: none; color: var(--primary-text-color);}
 
 button{padding: 10px 20px; background-color: #FF6464; border: 0px; font-family: "Roboto", sans-serif; color: #fff; font-weight: 500; font-size: 1.25em; cursor: pointer; border-radius: 4px;}
 
+.button{padding: 10px 20px; background-color: #FF6464; border: 0px; font-family: "Roboto", sans-serif; color: #fff; font-weight: 500; font-size: 1.25em; cursor: pointer; border-radius: 4px;}
+.button:active{background-color: #ff4141;}
 
 /* Navigation */
 #navigation {
@@ -69,8 +71,8 @@ button{padding: 10px 20px; background-color: #FF6464; border: 0px; font-family: 
 }
 
 #menu, #close {
+    height: 30px;
     width: 30px;
-    cursor: pointer;
 }
 
 #close {

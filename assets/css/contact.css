@@ -1,0 +1,40 @@
+#contact-section{
+    display: flex;
+    width: 100vw;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.contact-wrapper{
+    padding:40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    border: 2px solid #FF6464;
+}
+.contact-form{
+    display: flex;
+    min-width: 280px;
+    flex-direction: column;
+    gap: 0.8em;
+    align-items: flex-start;
+    justify-content: center;
+}
+.contact-form input{
+    width: 100%;
+    padding: 5px 10px;
+}
+.contact-form textarea{
+    width: 100%;    
+    padding: 10px 10px;
+}
+
+#form-output{
+    font-size: 0.8em;
+    color: green;
+}
+#form-output.error{
+    color: red;
+}
