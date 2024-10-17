@@ -5,9 +5,9 @@
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     max-height: 1000px;
-    margin-bottom: 40px;
+    transform: translateY(-50px);
 }
 
 
@@ -19,13 +19,13 @@
     align-items: center;
     justify-content: space-between;
     width: 80vw;
+    max-height: 600px;
     max-width: 1000px;
-    padding: 20px;
 }
 
-#pfp {
+.pfp {
     border-radius: 50%;
-    width: 280px;
+    width: 350px;
 }
 
 #home h1 {
@@ -57,13 +57,13 @@
     align-items: center;
     width: 100vw;
     background-color: #EDF7FA;
-    padding: 40px;
+    padding: 60px 40px;
 }
 
 .recent-post-links {
     display: flex;
     flex-direction: row;
-    width: 85vw;
+    width: 80vw;
     max-width: 1000px;
     justify-content: space-between;
 }
@@ -93,7 +93,9 @@
     padding: 24px;
     background-color: #fff;
 }
-
+.post-n:hover{
+    box-shadow: 10px 10px 10px #e5e5e5;
+}
 .post-n h2 {
     color: var(--primary-text-color);
 }
@@ -114,7 +116,7 @@
     width: 100vw;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 60px 20px;
 }
 
 #featured-work h3 {
@@ -131,8 +133,11 @@
     justify-content: center;
     padding-bottom: 10px;
     border-bottom: 2px solid #E0E0E0;
+    transition-duration: 0.5s;
 }
-
+.work-n:hover {
+    border-bottom: 2px solid var(--primary-text-color);
+}
 .work-desc {
     display: flex;
     flex-direction: column;
@@ -161,16 +166,22 @@
 
 
 /* Media Queries for Mobile */
-@media screen and (max-width: 922px) {
 
+@media screen and (max-width: 1200px){
+    .pfp{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 922px) {
+    #home-container{
+        display: flex;
+        justify-content: center;
+    }
     #home{
         flex-direction: column;
+        width: 90vw;
     }
-
-    #home-container {
-        padding-top: 0;
-    }
-
     .pfp {
         width: 200px;
     }
@@ -206,18 +217,18 @@
     .work-image {
         width: 100%;
     }
+    .pfp {
+        width: 180px;
+    }
 }
 @media screen and (max-height: 667px) {
-    #home-container {
-        margin-top: 100px;
-    }
     
 }
 @media screen and (max-width: 400px) {
-    #home{
-        flex-direction: column;
-    }
     .post-n{
         width: 350px;
+    }
+    .pfp {
+        width: 150px;
     }
 }

@@ -10,15 +10,9 @@
     box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
 body{font-family: "Roboto", sans-serif; color: var(--primary-text-color); overflow-x: hidden;}
 
 a{text-decoration: none; color: var(--primary-text-color);}
-
-button{padding: 10px 20px; background-color: #FF6464; border: 0px; font-family: "Roboto", sans-serif; color: #fff; font-weight: 500; font-size: 1.25em; cursor: pointer; border-radius: 4px;}
 
 .button{padding: 10px 20px; background-color: #FF6464; border: 0px; font-family: "Roboto", sans-serif; color: #fff; font-weight: 500; font-size: 1.25em; cursor: pointer; border-radius: 4px;}
 .button:active{background-color: #ff4141;}
@@ -119,11 +113,6 @@ footer {
     #navigation{
         padding: 10px 20px;
     }
-    #home {
-        flex-direction: column;
-        width: 90vw;
-    }
-
     #page-nav {
         display: none;
     }
